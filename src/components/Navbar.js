@@ -5,7 +5,7 @@ import { Heart, MessageBulb, ShoppingCart } from '../images/icons/'
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-light px-lg-30">
+    <nav className="navbar navbar-expand-lg bg-light px-lg-16">
       <div className="container border-bottom border-lightgray">
         <a className="navbar-brand" href="/">
           <img src={Logo} height="20" alt="monvalise" />

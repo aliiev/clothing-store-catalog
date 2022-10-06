@@ -2,7 +2,7 @@ export default function Categories() {
   const links = ['Головна', 'Каталог', 'Жінкам', 'Чоловікам', 'Дитячі речі', 'Аукціон', 'Бренди', 'Акції', 'Аутентифікація', 'Блог']
 
   return (
-    <div className="border-bottom border-lightgray">
+    <div className="border-bottom">
       <div className="container">
         <ul className="nav flex-nowrap overflow-auto categories-nav">
           {links.map((link, i) => (

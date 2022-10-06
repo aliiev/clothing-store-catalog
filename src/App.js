@@ -1,4 +1,4 @@
-import { Navbar, Categories } from './components'
+import { Navbar, Categories, PageHeader } from './components'
 import './styles/App.scss'
 
 export default function App() {
@@ -6,6 +6,7 @@ export default function App() {
     <>
       <Navbar />
       <Categories />
+      <PageHeader title="Каталог одягу" />
     </>
   )
 }

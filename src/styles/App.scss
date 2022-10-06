@@ -1,6 +1,7 @@
 .navbar {
   .container {
-    padding: 12px 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   .navbar-toggler {
@@ -19,6 +20,36 @@
   .search-input {
     .form-icon { margin-left: 17px; }
     .form-control { padding-left: 50px; }
+  }
+}
+
+.page-header {
+  margin-top: 32px;
+
+  .title { font-size: 28px; }
+  
+  .breadcrumb {
+    margin-bottom: 40px;
+    
+    .breadcrumb-item {
+      font-size: 12px;
+      
+      &.active {
+        font-family: 'Stolzl-Book';
+        color: #747778;
+      }
+
+      &:before {
+        font-size: 10px;
+        color: #a9acac;
+        margin-top: 2px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -79,6 +110,12 @@
   .search-bar { margin-bottom: 12px; }
   .dropdown-nav {
     & > * { margin: 0; }
+  }
+
+  .page-header {
+    margin-top: 32px;
+
+    .breadcrumb { margin-bottom: 6px; }
   }
 }
 

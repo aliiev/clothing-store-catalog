@@ -108,6 +108,7 @@
 
 .filters-section {
   margin-top: 32px;
+  margin-bottom: 24px;
 
   .title {
     font-family: 'Stolzl-Book';
@@ -146,6 +147,37 @@
     padding: 0 12px 0 8px;
     border-left: 2px #ffffff solid;
     pointer-events: none;
+  }
+}
+
+.accordion {
+  .accordion-item { margin-bottom: 2px; }
+
+  .accordion-button {
+    font-family: 'Stolzl-Book'; 
+    font-size: 14px;
+  }
+
+  .accordion-body {
+    border: 1px #eff1f1 solid;
+  }
+}
+
+.form-check {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  
+  .form-check-input {
+    margin: 0; 
+  }
+
+  .form-check-label {
+    font-family: 'Stolzl-Book';
+    font-size: 14px;
+    color: #444748;
+    margin-left: 18px;
   }
 }
 

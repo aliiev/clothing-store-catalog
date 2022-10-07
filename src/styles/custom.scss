@@ -47,4 +47,22 @@ $navbar-brand-margin-end: 57px;
 $dropdown-border-color: #eff1f1; 
 $dropdown-font-size: 12px;
 
+// ACCORDION SETUP
+$accordion-button-bg: #eff1f1;
+$accordion-button-color: #444748;
+$accordion-button-active-bg: $accordion-button-bg;
+$accordion-button-active-color: $accordion-button-color;
+$accordion-border-width: 0;
+$accordion-border-radius: 0;
+$accordion-icon-color: #747778;
+$accordion-icon-width: 18px;
+
+// CHECKBOX SETUP
+$form-check-input-width: 16px;
+$form-check-input-bg: $body-bg;
+$form-check-input-border: 2px #c4c7c7 solid;
+$form-check-input-checked-bg-color: #2d3132;
+$form-check-label-cursor: pointer;
+$form-check-padding-start: $form-check-input-width + 18px;
+
 @import '~bootstrap/scss/bootstrap.scss'

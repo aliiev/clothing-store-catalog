@@ -1,4 +1,4 @@
-import { Navbar, Categories, PageHeader, Select } from './components'
+import { Navbar, Categories, PageHeader, Select, Sidebar } from './components'
 import './styles/App.scss'
 
 export default function App() {
@@ -13,6 +13,13 @@ export default function App() {
           <div className="d-flex align-items-center sort-select">
             <span className="d-none d-md-block label">Сортувати за:</span>
             <Select />
+          </div>
+        </div>
+      </section>
+      <section className="container">
+        <div className="row">
+          <div className="col-12 col-md-5 col-lg-3">
+            <Sidebar />
           </div>
         </div>
       </section>

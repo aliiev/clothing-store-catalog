@@ -106,6 +106,49 @@
   }
 }
 
+.filters-section {
+  margin-top: 32px;
+
+  .title {
+    font-family: 'Stolzl-Book';
+    font-size: 22px;
+    color: #5c5f60;
+  }
+
+  .sort-select {
+    .label {
+      font-size: 12px;
+      color: #5c5f60;
+      margin-right: 12px;
+    }
+  }
+}
+
+.sort-select {
+  .form-select {
+    position: relative;
+    background-color: #eff1f1;
+    background-image: none;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Stolzl-Regular';
+    padding: 8px 12px;
+    padding-right: 38px;
+    width: auto;
+  }
+
+  .select-chevron {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 12px 0 8px;
+    border-left: 2px #ffffff solid;
+    pointer-events: none;
+  }
+}
+
 @media (max-width: 992px) {
   .search-bar { margin-bottom: 12px; }
   .dropdown-nav {
@@ -115,7 +158,11 @@
   .page-header {
     margin-top: 32px;
 
-    .breadcrumb { margin-bottom: 6px; }
+    .breadcrumb { margin-bottom: 18px; }
+  }
+
+  .filters-section {
+    margin-top: 18px;
   }
 }
 

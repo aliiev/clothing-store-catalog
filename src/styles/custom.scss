@@ -65,4 +65,8 @@ $form-check-input-checked-bg-color: #2d3132;
 $form-check-label-cursor: pointer;
 $form-check-padding-start: $form-check-input-width + 18px;
 
+// FLOATING LABEL SETUP
+$form-floating-label-opacity: 1;
+$form-floating-label-transform: scale(.85) translateY(-.5rem);
+
 @import '~bootstrap/scss/bootstrap.scss'

@@ -4,7 +4,24 @@ export default function Sidebar() {
   return (
     <div className="accordion" id="accordionFilters">
       <AccordionItem id="categories" title="Категорії" />
-      <AccordionItem id="price" title="Ціна" expanded={true} />
+      
+      <AccordionItem id="price" title="Ціна" expanded={true}>
+        <div className="row">
+          <div className="col">
+            <div className="form-floating">
+              <input className="form-control" id="input-price-from" type="text" placeholder="Ціна" />
+              <label htmlFor="input-price-from">Від</label>
+            </div>
+          </div>
+          <div className="col">
+            <div className="form-floating">
+              <input className="form-control" id="input-price-to" type="text" placeholder="Ціна" />
+              <label htmlFor="input-price-to">До</label>
+            </div>
+          </div>
+        </div>
+      </AccordionItem>
+      
       <AccordionItem id="seller" title="Продавець" />
       <AccordionItem id="brand" title="Бренд" />
       

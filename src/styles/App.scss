@@ -213,6 +213,90 @@
   }
 }
 
+.card {
+  .card-header, .card-footer {
+    background: inherit;
+    border: none;
+  }
+
+  .card-header {
+    width: 100%;
+    height: 305px;
+    padding: 24px;
+    padding-bottom: 16px;
+    
+    .btn-like {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      padding: 0;
+      margin: 0;
+
+      img { padding: 0; }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      padding: 20px 28px;
+      object-fit: contain;
+    }
+
+    .badge {
+      position: absolute;
+      left: 24px;
+      bottom: 24px;
+      background: #b4fff0;
+      padding: 4px 8px;
+      font-size: 10;
+      line-height: 15px;
+      color: #00382f;
+    }
+  }
+
+  .card-body {
+    padding-top: 0;
+
+    .card-title {
+      font-size: 14px;
+    }
+
+    .card-subtitle {
+      font-family: 'Stolzl-Medium';
+      font-size: 10px;
+      margin: 0;
+      margin-bottom: 4px;
+    }
+  }
+
+  .card-footer {
+    padding-top: 0;
+    padding-bottom: 24px;
+
+    .price {
+      font-family: 'Stolzl-Medium';
+      font-size: 14px;
+    }
+
+    .old-price {
+      font-family: 'Stolzl-Book';
+      font-size: 12px;
+      color: #747778;
+    }
+
+    .location {
+      font-family: 'Stolzl-Book';
+      font-size: 12px;
+      margin-left: 2px;
+    }
+
+    .username {
+      font-size: 14px;
+      margin-left: 8px;
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .search-bar { margin-bottom: 12px; }
   .dropdown-nav {

@@ -24,8 +24,9 @@ $theme-colors: (
 $body-bg: #ffffff;
 $body-color: #2d3132;
 $border-color: #e0e3e3;
-$font-family-sans-serif: 'Stolzl-Regular';
 $border-radius: 4px;
+$font-family-sans-serif: 'Stolzl-Regular';
+$text-muted: #5c5f60;
 
 // FORMS SETUP
 $btn-padding-x: 20px;
@@ -68,5 +69,10 @@ $form-check-padding-start: $form-check-input-width + 18px;
 // FLOATING LABEL SETUP
 $form-floating-label-opacity: 1;
 $form-floating-label-transform: scale(.85) translateY(-.5rem);
+
+// CARD SETUP
+$card-border-color: #eff1f1;
+$card-spacer-x: 24px;
+$card-spacer-y: $card-spacer-x;
 
 @import '~bootstrap/scss/bootstrap.scss'

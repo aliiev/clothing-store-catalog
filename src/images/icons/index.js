@@ -4,5 +4,16 @@ import ChevronSelect from './chevron-select.svg'
 import Heart from './heart.svg'
 import MessageBulb from './message-bulb.svg'
 import ShoppingCart from './shopping-cart.svg'
+import MapPin from './map-pin.svg'
+import Like from './like.svg'
 
-export { Search, Chevron, ChevronSelect, Heart, MessageBulb, ShoppingCart }
+export { 
+  Search,
+  Chevron,
+  ChevronSelect,
+  Heart,
+  MessageBulb,
+  ShoppingCart,
+  MapPin,
+  Like
+}

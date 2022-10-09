@@ -7,6 +7,7 @@ import Sidebar from './Sidebar'
 import AccordionItem from './AccordionItem'
 import Checkbox from './Checkbox'
 import PriceRange from './PriceRange'
+import Card from './Card'
 
 export { 
   Navbar,
@@ -17,5 +18,6 @@ export {
   Sidebar,
   AccordionItem,
   Checkbox,
-  PriceRange
+  PriceRange,
+  Card
 }

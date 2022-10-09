@@ -1,4 +1,6 @@
-import { Navbar, Categories, PageHeader, Select, Sidebar } from './components'
+import { Navbar, Categories, PageHeader, Select, Sidebar, Card } from './components'
+import { Product0Img } from './images/products/'
+import { LoveBrandImg } from './images/users/'
 import './styles/App.scss'
 
 export default function App() {
@@ -20,6 +22,21 @@ export default function App() {
         <div className="row">
           <div className="col-12 col-md-5 col-lg-3">
             <Sidebar />
+          </div>
+          <div className="col-12 col-md-7 col-lg-9">
+            <div className="row">
+              <div className="col-12 col-md-4">
+                <Card
+                  img={Product0Img}
+                  title="Темно-сині джинси Louis Vuitton"
+                  brand="Louis Vuitton"
+                  price="3 799"
+                  oldPrice="5 499"
+                  location="Херсон"
+                  author={{name: 'LoveBrand', img: LoveBrandImg}}
+                  badge="Топ" />
+              </div>
+            </div>
           </div>
         </div>
       </section>

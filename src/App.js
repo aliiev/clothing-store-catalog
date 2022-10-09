@@ -1,4 +1,4 @@
-import { Navbar, Categories, PageHeader, Select, Sidebar, Card } from './components'
+import { Navbar, Categories, PageHeader, Select, Sidebar, Card, Pagination } from './components'
 import { products } from './data/products'
 import './styles/App.scss'
 
@@ -39,6 +39,7 @@ export default function App() {
                 </div>
               ))}
             </div>
+            <Pagination />
           </div>
         </div>
       </section>

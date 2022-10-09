@@ -80,4 +80,9 @@ $card-border-color: #eff1f1;
 $card-spacer-x: 24px;
 $card-spacer-y: $card-spacer-x;
 
+// PAGINATION SETUP
+$pagination-font-size: 10px;
+$pagination-color: #5c5f60;
+$pagination-border-width: 0;
+
 @import '~bootstrap/scss/bootstrap.scss'

@@ -8,6 +8,7 @@ import AccordionItem from './AccordionItem'
 import Checkbox from './Checkbox'
 import PriceRange from './PriceRange'
 import Card from './Card'
+import Pagination from './Pagination'
 
 export { 
   Navbar,
@@ -19,5 +20,6 @@ export {
   AccordionItem,
   Checkbox,
   PriceRange,
-  Card
+  Card,
+  Pagination
 }

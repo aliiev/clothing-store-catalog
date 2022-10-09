@@ -9,6 +9,7 @@ import Checkbox from './Checkbox'
 import PriceRange from './PriceRange'
 import Card from './Card'
 import Pagination from './Pagination'
+import Footer from './Footer'
 
 export { 
   Navbar,
@@ -21,5 +22,6 @@ export {
   Checkbox,
   PriceRange,
   Card,
-  Pagination
+  Pagination,
+  Footer
 }

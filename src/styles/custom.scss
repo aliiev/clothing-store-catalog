@@ -28,6 +28,11 @@ $border-radius: 4px;
 $font-family-sans-serif: 'Stolzl-Regular';
 $text-muted: #5c5f60;
 
+// GRID SETUP
+$gutters: (
+  24: 24px
+);
+
 // FORMS SETUP
 $btn-padding-x: 20px;
 $btn-padding-y: 10px;

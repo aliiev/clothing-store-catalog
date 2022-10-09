@@ -1,13 +1,14 @@
 import { MapPin, Like } from '../images/icons/'
 
-export default function Card({ img, title, brand, price, oldPrice, location, author, badge  }) {
+export default function Card({ title, brand, img, price, oldPrice, badge, tag, location, author }) {
   return (
-    <div className="card">
+    <div className="card h-100">
       <div className="card-header position-relative">
         <button className="btn btn-like">
           <img src={Like} height="16" alt="Зберегти" />
         </button>
         <img src={img} alt="Product" />
+        { tag && <span className="badge tag text-lowercase">{tag}</span> }
         { badge && <span className="badge text-uppercase">{badge}</span>}
       </div>
       <div className="card-body">

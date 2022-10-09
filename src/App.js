@@ -1,6 +1,5 @@
 import { Navbar, Categories, PageHeader, Select, Sidebar, Card } from './components'
-import { Product0Img } from './images/products/'
-import { LoveBrandImg } from './images/users/'
+import { products } from './data/products'
 import './styles/App.scss'
 
 export default function App() {
@@ -20,22 +19,25 @@ export default function App() {
       </section>
       <section className="container">
         <div className="row">
-          <div className="col-12 col-md-5 col-lg-3">
+          <div className="col-12 col-md-4 col-lg-3">
             <Sidebar />
           </div>
-          <div className="col-12 col-md-7 col-lg-9">
-            <div className="row">
-              <div className="col-12 col-md-4">
-                <Card
-                  img={Product0Img}
-                  title="Темно-сині джинси Louis Vuitton"
-                  brand="Louis Vuitton"
-                  price="3 799"
-                  oldPrice="5 499"
-                  location="Херсон"
-                  author={{name: 'LoveBrand', img: LoveBrandImg}}
-                  badge="Топ" />
-              </div>
+          <div className="col-12 col-md-8 col-lg-9">
+            <div className="row g-24">
+              {products.map((product, i) => (
+                <div key={i} className="col-12 col-md-6 col-lg-4">
+                  <Card
+                    title={product.title}
+                    brand={product.brand}
+                    img={product.img}
+                    price={product.price}
+                    oldPrice={product.oldPrice}
+                    badge={product.badge}
+                    tag={product.tag}
+                    location={product.location}
+                    author={product.author} />
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { AccordionItem, Checkbox } from './'
+import { AccordionItem, PriceRange, Checkbox } from './'
 
 export default function Sidebar() {
   return (
@@ -6,6 +6,11 @@ export default function Sidebar() {
       <AccordionItem id="categories" title="Категорії" />
       
       <AccordionItem id="price" title="Ціна" expanded={true}>
+        <div className="row mb-34">
+          <div className="col">
+            <PriceRange max={100000} defaultValues={[0, 50000]} />
+          </div>
+        </div>
         <div className="row">
           <div className="col">
             <div className="form-floating">

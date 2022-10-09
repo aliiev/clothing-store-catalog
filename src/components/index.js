@@ -6,6 +6,7 @@ import Select from './Select'
 import Sidebar from './Sidebar'
 import AccordionItem from './AccordionItem'
 import Checkbox from './Checkbox'
+import PriceRange from './PriceRange'
 
 export { 
   Navbar,
@@ -15,5 +16,6 @@ export {
   Select,
   Sidebar,
   AccordionItem,
-  Checkbox
+  Checkbox,
+  PriceRange
 }

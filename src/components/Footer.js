@@ -15,7 +15,7 @@ export default function Footer() {
               <li><a href="/">Рекомендації з безпечних покупок</a></li>
             </ul>
           </div>
-          <div className="col-12 col-sm-6 col-md-3 mt-3 mt-md-0">
+          <div className="col-12 col-sm-6 col-md-3 mt-3 mt-sm-0">
             <ul className="list-unstyled">
               <li><a href="/">Довідка для продавців</a></li>
               <li><a href="/">Як почати продавати</a></li>
@@ -39,7 +39,7 @@ export default function Footer() {
             <ul className="list-unstyled">
               <li>Мобільний додаток</li>
               <li>
-                <a href="/">
+                <a className="link-app" href="/">
                   <img src={GooglePlay} height="44" alt="Завантажити з Google Play"/>
                 </a>
               </li>

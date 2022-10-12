@@ -17,7 +17,7 @@
 $theme-colors: (
   'light': #ffffff,
   'lightgray': #e0e3e3,
-  'darkgray': #2d3132
+  'darkgray': #2d3132,
 );
 
 // BODY SETUP
@@ -45,6 +45,10 @@ $input-border-width: 2px;
 $input-font-family: 'Stolzl-Book';
 $input-font-size: 12px;
 $input-placeholder-color: #5c5f60;
+$input-focus-border-color: #c4c7c7;
+$input-focus-box-shadow: none;
+
+$input-btn-focus-color: #c4c7c7;
 
 // NAVBAR SETUP
 $navbar-brand-margin-end: 57px;
@@ -70,6 +74,7 @@ $form-check-input-border: 2px #c4c7c7 solid;
 $form-check-input-checked-bg-color: #2d3132;
 $form-check-label-cursor: pointer;
 $form-check-padding-start: $form-check-input-width + 18px;
+$form-check-transition: all .15s ease-in-out;
 
 // FLOATING LABEL SETUP
 $form-floating-label-opacity: 1;
@@ -84,5 +89,7 @@ $card-spacer-y: $card-spacer-x;
 $pagination-font-size: 10px;
 $pagination-color: #5c5f60;
 $pagination-border-width: 0;
+$pagination-focus-color: #5c5f60;
+$pagination-focus-box-shadow: none;
 
 @import '~bootstrap/scss/bootstrap.scss'

@@ -1,7 +1,28 @@
+a {
+  border-bottom: 1px transparent solid;
+  transition: border-color .15s ease-in-out;
+
+  &:focus {
+    border-color:#2d3132;
+    outline: none;
+  }
+}
+
 .navbar {
   .container {
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+
+  .navbar-divider {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+  }
+
+  .navbar-brand {
+    border: none;
   }
 
   .navbar-toggler {
@@ -18,8 +39,22 @@
   & > :first-child { margin-left: 0; }
 
   .search-input {
-    .form-icon { margin-left: 17px; }
-    .form-control { padding-left: 50px; }
+    .icon-search { margin-left: 17px; }
+    
+    .icon-close {
+      border: none;
+      padding: auto 17px;
+    }
+    
+    .form-control { 
+      padding-left: 50px;
+      padding-right: 54px;
+    }
+  }
+
+  .btn-search:hover, .btn-search:focus {
+    background: #444748;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, .16);
   }
 }
 
@@ -102,7 +137,10 @@
     color: #2d3132;
     transition: border-color .3s ease-in-out;
 
-    &.active, &:hover { border-color: #2d3132; }
+    &.active, &:hover, &:focus {
+      border-color: #2d3132;
+      outline: none;
+    }
   }
 }
 
@@ -158,8 +196,16 @@
     font-size: 14px;
   }
 
-  .accordion-body {
-    border: 1px #eff1f1 solid;
+  .accordion-collapse {
+    &.collapsing {
+      .range-thumb {
+        opacity: 0;
+      }
+    }
+
+    .accordion-body {
+      border: 1px #eff1f1 solid;
+    }
   }
 }
 
@@ -170,7 +216,12 @@
   padding: 0;
   
   .form-check-input {
-    margin: 0; 
+    flex-shrink: 0;
+    margin: 0;
+
+    &:focus {
+      border-color: #2d3132;
+    }
   }
 
   .form-check-label {
@@ -178,6 +229,10 @@
     font-size: 14px;
     color: #444748;
     margin-left: 18px;
+
+    .count {
+      color: #747778;
+    }
   }
 }
 
@@ -189,6 +244,8 @@
     font-family: 'Stolzl-Regular';
     padding: 12px 0;
     height: 45px;
+
+    &:hover, &:focus { border-color: #2d3132; }
   }
 
   label {
@@ -210,6 +267,9 @@
     border-radius: 4px;
     width: 16px;
     height: 16px;
+    transition: opacity .15s ease-in-out;
+
+    &:focus { outline: none; }
   }
 }
 
@@ -364,6 +424,8 @@ footer {
     }
   }
 
+  .link-app { border: none;}
+
   .copyright {
     font-family: 'Stolzl-Book';
     font-size: 12px;
@@ -384,6 +446,14 @@ footer {
 
   .filters-section {
     margin-top: 18px;
+  }
+
+  footer {
+    padding-bottom: 32px;
+
+    .footer-links {
+      padding: 42px 0;
+    }
   }
 }
 

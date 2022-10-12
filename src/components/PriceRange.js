@@ -1,9 +1,6 @@
-import { useState } from 'react'
 import { Range, getTrackBackground } from 'react-range'
 
-export default function PriceRange({ step = 1, min = 0, max = 100, defaultValues = [25, 50] }) {
-  const [values, setValues] = useState(defaultValues)
-
+export default function PriceRange({ step = 1, min = 0, max = 100, values = [25, 50], onChange }) {
   return (
     <div className="range">
       <Range
@@ -11,7 +8,7 @@ export default function PriceRange({ step = 1, min = 0, max = 100, defaultValues
         min={min}
         max={max}
         values={values}
-        onChange={values => setValues(values)}
+        onChange={e => onChange(e)}
         renderTrack={({props, children}) => (
           <div 
             {...props}

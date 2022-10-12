@@ -1,3 +1,4 @@
+import formatThousands from 'format-thousands'
 import { MapPin, Like } from '../images/icons/'
 
 export default function Card({ title, brand, img, price, oldPrice, badge, tag, location, author }) {
@@ -18,8 +19,8 @@ export default function Card({ title, brand, img, price, oldPrice, badge, tag, l
       <div className="card-footer">
         <div className="d-flex justify-content-between">
           <div className="d-flex flex-column">
-            <span className="text-decoration-line-through old-price">{oldPrice}</span>
-            <span className="price">{price}</span>
+            <span className="text-decoration-line-through old-price">{formatThousands(oldPrice)}</span>
+            <span className="price">{formatThousands(price)}</span>
           </div>
           <div className="d-flex flex-column align-items-end">
             <div className="flex align-items-center">

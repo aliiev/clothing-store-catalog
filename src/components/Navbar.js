@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container position-relative">
-        <span className="position-absolute bottom-0 w-100 border-bottom"></span>
+        <span className="navbar-divider border-bottom"></span>
         <a className="navbar-brand" href="/">
           <img src={Logo} height="20" alt="monvalise" />
         </a>

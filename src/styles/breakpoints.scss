@@ -1,0 +1,51 @@
+// LARGE DISPLAY
+@media (max-width: 992px) {
+  // PADDING ON LARGE DISPLAY
+  .px-lg-16 { padding: 0 16px; }
+
+  // SEARCH BAR
+  .search-bar { margin-bottom: 12px; }
+  
+  // DROPDOWNS ROW
+  .dropdown-nav {
+    & > * { margin: 0; }
+  }
+
+  // PAGE HEADER
+  .page-header {
+    margin-top: 32px;
+
+    .breadcrumb { margin-bottom: 18px; }
+  }
+
+  // FILTERS SECTION
+  .filters-section { margin-top: 18px; }
+
+  // FOOTER
+  footer {
+    padding-bottom: 32px;
+
+    .footer-links { padding: 42px 0; }
+  }
+}
+
+// SMALL DISPLAY
+@media (max-width: 576px) {
+  // PROMO CAROUSEL
+  .carousel {
+    .carousel-item {
+      .title { font-size: 12px; }
+      .icon-row img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  // SEARCH BAR
+  .search-bar {
+    & > * { margin: 4px 0; }
+    & > :first-child { margin-top: 0; }
+    & > :last-child { margin-bottom: 0; }
+  }
+}

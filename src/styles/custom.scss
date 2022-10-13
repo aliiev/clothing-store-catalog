@@ -1,3 +1,4 @@
+// FONTS SETUP
 @font-face {
   font-family: 'Stolzl-Regular';
   src: local('Stolzl-Regular'), url('../fonts/Stolzl-Regular.ttf') format('truetype');
@@ -20,6 +21,35 @@ $theme-colors: (
   'darkgray': #2d3132,
 );
 
+// GRID SETUP
+$gutters: (
+  24: 24px
+);
+
+// UTILITIES
+$utilities: (
+  'font-size': (
+    property: font-size,
+    class: 'fs',
+    values: (12: 12px)
+  ),
+  'object-fit': (
+    property: object-fit,
+    class: 'object-fit',
+    values: (cover: cover)
+  ),
+  'margin-bottom': (
+    property: margin-bottom,
+    class: 'mb',
+    values: (34: 34px)
+  ),
+  'cursor': (
+    property: cursor,
+    class: 'cursor',
+    values: (pointer: pointer)
+  )
+);
+
 // BODY SETUP
 $body-bg: #ffffff;
 $body-color: #2d3132;
@@ -27,11 +57,6 @@ $border-color: #e0e3e3;
 $border-radius: 4px;
 $font-family-sans-serif: 'Stolzl-Regular';
 $text-muted: #5c5f60;
-
-// GRID SETUP
-$gutters: (
-  24: 24px
-);
 
 // FORMS SETUP
 $btn-padding-x: 20px;

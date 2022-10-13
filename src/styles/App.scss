@@ -1,3 +1,4 @@
+// BASE SETUP
 a {
   border-bottom: 1px transparent solid;
   transition: border-color .15s ease-in-out;
@@ -8,6 +9,7 @@ a {
   }
 }
 
+// PROMO CAROUSEL
 .carousel {
   .carousel-item {
     .title {
@@ -30,6 +32,7 @@ a {
   }
 }
 
+// NAVBAR
 .navbar {
   padding: 0;
 
@@ -45,9 +48,7 @@ a {
     bottom: 0;
   }
 
-  .navbar-brand {
-    border: none;
-  }
+  .navbar-brand { border: none; }
 
   .navbar-toggler {
     border: none;
@@ -58,6 +59,7 @@ a {
   }
 }
 
+// SEARCH BAR
 .search-bar {
   & > * { margin: 0 12px; }
   & > :first-child { margin-left: 0; }
@@ -82,36 +84,7 @@ a {
   }
 }
 
-.page-header {
-  margin-top: 32px;
-
-  .title { font-size: 28px; }
-  
-  .breadcrumb {
-    margin-bottom: 40px;
-    
-    .breadcrumb-item {
-      font-size: 12px;
-      
-      &.active {
-        font-family: 'Stolzl-Book';
-        color: #747778;
-      }
-
-      &:before {
-        font-size: 10px;
-        color: #a9acac;
-        margin-top: 2px;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-    }
-  }
-}
-
+// DROPDOWNS
 .dropdown {
   border: none;
 
@@ -145,11 +118,13 @@ a {
   }
 }
 
+// DROPDOWNS ROW
 .dropdown-nav {
   & > * { margin: 0 12px; }
   & > :last-child { margin-right: 0; }
 }
 
+// CATEGORIES NAVIGATION
 .categories-nav {
   .nav-link {
     border-bottom: 2px transparent solid;
@@ -168,6 +143,45 @@ a {
   }
 }
 
+// PAGE HEADER
+.page-header {
+  margin-top: 32px;
+
+  .title { font-size: 28px; }
+}
+
+// BREADCRUMB
+.breadcrumb {
+  margin-bottom: 40px;
+  
+  .breadcrumb-item {
+    font-size: 12px;
+    
+    &.active {
+      font-family: 'Stolzl-Book';
+      color: #747778;
+    }
+
+    &:before {
+      font-size: 10px;
+      color: #a9acac;
+      margin-top: 2px;
+    }
+
+    a {
+      border-bottom: 1px transparent solid;
+      color: inherit;
+      text-decoration: none;
+      transition: border-color .15s ease-in-out;
+
+      &:hover {
+        border-color: #2d3132;
+      }
+    }
+  }
+}
+
+// FILTERS SECTION
 .filters-section {
   margin-top: 32px;
   margin-bottom: 24px;
@@ -178,7 +192,7 @@ a {
     color: #5c5f60;
   }
 
-  .sort-select {
+  .sorting-select {
     .label {
       font-size: 12px;
       color: #5c5f60;
@@ -187,7 +201,8 @@ a {
   }
 }
 
-.sort-select {
+// CUSTOM SELECT
+.select {
   .form-select {
     position: relative;
     background-color: #eff1f1;
@@ -212,6 +227,7 @@ a {
   }
 }
 
+// ACCORDION
 .accordion {
   .accordion-item { margin-bottom: 2px; }
 
@@ -227,39 +243,11 @@ a {
       }
     }
 
-    .accordion-body {
-      border: 1px #eff1f1 solid;
-    }
+    .accordion-body { border: 1px #eff1f1 solid; }
   }
 }
 
-.form-check {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0;
-  
-  .form-check-input {
-    flex-shrink: 0;
-    margin: 0;
-
-    &:focus {
-      border-color: #2d3132;
-    }
-  }
-
-  .form-check-label {
-    font-family: 'Stolzl-Book';
-    font-size: 14px;
-    color: #444748;
-    margin-left: 18px;
-
-    .count {
-      color: #747778;
-    }
-  }
-}
-
+// FLOATING LABEL INPUT
 .form-floating {
   .form-control {
     border: none;
@@ -280,6 +268,7 @@ a {
   }
 }
 
+// PRICE RANGE
 .range-track {
   background: #c4c7c7;
   width: 100%;
@@ -297,6 +286,31 @@ a {
   }
 }
 
+// CHECKBOX
+.form-check {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  
+  .form-check-input {
+    flex-shrink: 0;
+    margin: 0;
+
+    &:focus { border-color: #2d3132; }
+  }
+
+  .form-check-label {
+    font-family: 'Stolzl-Book';
+    font-size: 14px;
+    color: #444748;
+    margin-left: 18px;
+
+    .count { color: #747778; }
+  }
+}
+
+// CARD
 .card {
   .card-header, .card-footer {
     background: inherit;
@@ -349,9 +363,7 @@ a {
   .card-body {
     padding-top: 0;
 
-    .card-title {
-      font-size: 14px;
-    }
+    .card-title { font-size: 14px; }
 
     .card-subtitle {
       font-family: 'Stolzl-Medium';
@@ -389,6 +401,7 @@ a {
   }
 }
 
+// PAGINATION
 .pagination {
   font-family: 'Stolzl-Medium';
   margin: 56px 0;
@@ -428,6 +441,7 @@ a {
   }
 }
 
+// FOOTER
 footer {
   background: #eff1f1;
   padding-bottom: 38px;
@@ -456,46 +470,4 @@ footer {
   }
 }
 
-@media (max-width: 992px) {
-  .search-bar { margin-bottom: 12px; }
-  .dropdown-nav {
-    & > * { margin: 0; }
-  }
-
-  .page-header {
-    margin-top: 32px;
-
-    .breadcrumb { margin-bottom: 18px; }
-  }
-
-  .filters-section {
-    margin-top: 18px;
-  }
-
-  footer {
-    padding-bottom: 32px;
-
-    .footer-links {
-      padding: 42px 0;
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  .carousel {
-    .carousel-item {
-      .title { font-size: 12px; }
-      .icon-row img {
-        width: 18px;
-        height: 18px;
-      }
-    }
-  }
-  .search-bar {
-    & > * { margin: 4px 0; }
-    & > :first-child { margin-top: 0; }
-    & > :last-child { margin-bottom: 0; }
-  }
-}
-
-@import './utilities.scss'
+@import './breakpoints.scss';

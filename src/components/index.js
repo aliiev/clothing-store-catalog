@@ -2,7 +2,7 @@ import Carousel from './Carousel'
 import Navbar from './Navbar'
 import SearchBar from './SearchBar'
 import Categories from './Categories'
-import PageHeader from './PageHeader'
+import Breadcrumb from './Breadcrumb'
 import Select from './Select'
 import Sidebar from './Sidebar'
 import AccordionItem from './AccordionItem'
@@ -17,7 +17,7 @@ export {
   Navbar,
   SearchBar,
   Categories,
-  PageHeader,
+  Breadcrumb,
   Select,
   Sidebar,
   AccordionItem,

@@ -47,6 +47,7 @@ const authors = {
 }
 
 export const products = [{
+  id: 0,
   title: 'Темно-сині джинси Louis Vuitton',
   brand: 'Louis Vuitton',
   img: Product0Img,
@@ -56,6 +57,7 @@ export const products = [{
   location: 'Херсон',
   author: authors.loveBrand
 }, {
+  id: 1,
   title: 'Чорний піджак Thom Browne',
   brand: 'Thom Browne',
   img: Product1Img,
@@ -65,6 +67,7 @@ export const products = [{
   location: 'Хмельницький',
   author: authors.sellForMen
 }, {
+  id: 2,
   title: 'Вовняний піджак Canali',
   brand: 'Canali',
   img: Product2Img,
@@ -73,6 +76,7 @@ export const products = [{
   location: 'Хмельницький',
   author: authors.sellForMen
 }, {
+  id: 3,
   title: 'Клатч Louis Vuitton Limelight',
   brand: 'Louis Vuitton',
   img: Product3Img,
@@ -81,6 +85,7 @@ export const products = [{
   location: 'Дніпро',
   author: authors.brandear
 }, {
+  id: 4,
   title: 'Сумка з декором Elena Ghiselini',
   brand: 'Elena Ghiselini',
   img: Product4Img,
@@ -90,6 +95,7 @@ export const products = [{
   location: 'Дніпро',
   author: authors.brandear
 }, {
+  id: 5,
   title: 'Бомбер Acne на блискавці',
   brand: 'Acne',
   img: Product5Img,
@@ -98,6 +104,7 @@ export const products = [{
   location: 'Київ',
   author: authors.alexalex
 }, {
+  id: 6,
   title: 'Довга сукня Gucci',
   brand: 'Gucci',
   img: Product6Img,
@@ -106,6 +113,7 @@ export const products = [{
   location: 'Рівне',
   author: authors.sellBuy
 }, {
+  id: 7,
   title: 'Помаранчевий бомбер Woolrich',
   brand: 'Chanel',
   img: Product7Img,
@@ -114,6 +122,7 @@ export const products = [{
   location: 'Кроповницький',
   author: authors.deevaSofia
 }, {
+  id: 8,
   title: 'Салатове пальто Hache',
   brand: 'Hache',
   img: Product8Img,

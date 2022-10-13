@@ -1,3 +1,4 @@
+import Carousel from './Carousel'
 import Navbar from './Navbar'
 import SearchBar from './SearchBar'
 import Categories from './Categories'
@@ -12,6 +13,7 @@ import Pagination from './Pagination'
 import Footer from './Footer'
 
 export { 
+  Carousel,
   Navbar,
   SearchBar,
   Categories,

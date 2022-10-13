@@ -5,7 +5,7 @@ import { Heart, MessageBulb, ShoppingCart } from '../images/icons/'
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg bg-light sticky-top">
       <div className="container position-relative">
         <span className="navbar-divider border-bottom"></span>
         <a className="navbar-brand" href="/">

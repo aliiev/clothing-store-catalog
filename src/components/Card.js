@@ -1,11 +1,14 @@
+import { useState } from 'react'
 import formatThousands from 'format-thousands'
 import { MapPin, Like } from '../images/icons/'
 
 export default function Card({ title, brand, img, price, oldPrice, badge, tag, location, author }) {
+  const [liked, setLiked] = useState(false)
+
   return (
     <div className="card h-100">
       <div className="card-header position-relative">
-        <button className="btn btn-like">
+        <button className="btn btn-like" onClick={() => setLiked(!liked)}>
           <img src={Like} height="16" alt="Зберегти" />
         </button>
         <img src={img} alt="Product" />

@@ -8,7 +8,31 @@ a {
   }
 }
 
+.carousel {
+  .carousel-item {
+    .title {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #0f1a34;
+    }
+
+    .icon-row {
+      & > :first-child { transform: rotate(-30deg); }
+      & > :last-child { transform: rotate(30deg); }
+      
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
 .navbar {
+  padding: 0;
+
   .container {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -458,6 +482,15 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .carousel {
+    .carousel-item {
+      .title { font-size: 12px; }
+      .icon-row img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
   .search-bar {
     & > * { margin: 4px 0; }
     & > :first-child { margin-top: 0; }

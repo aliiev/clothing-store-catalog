@@ -6,7 +6,7 @@ export default function Breadcrumb({ items }) {
           if (i + 1 !== items.length)
             return <li key={i} className="breadcrumb-item"><a href="/">{item}</a></li>
           else
-            return <li className="breadcrumb-item active">{item}</li>
+            return <li key={i} className="breadcrumb-item active">{item}</li>
         })}
       </ol>
     </nav>

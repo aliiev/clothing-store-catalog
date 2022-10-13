@@ -9,6 +9,7 @@ import AccordionItem from './AccordionItem'
 import Checkbox from './Checkbox'
 import PriceRange from './PriceRange'
 import Card from './Card'
+import LikeBtn from './LikeBtn'
 import Pagination from './Pagination'
 import Footer from './Footer'
 
@@ -24,6 +25,7 @@ export {
   Checkbox,
   PriceRange,
   Card,
+  LikeBtn,
   Pagination,
   Footer
 }

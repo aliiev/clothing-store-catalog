@@ -11,8 +11,10 @@ export default function Navbar() {
         <a className="navbar-brand" href="/">
           <img src={Logo} height="20" alt="monvalise" />
         </a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Відкрити меню">
-          <span className="navbar-toggler-icon"></span>
+        <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Відкрити меню">
+          <span className="icon-bar top-bar"></span>
+          <span className="icon-bar middle-bar"></span>
+          <span className="icon-bar bottom-bar"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <div className="d-flex flex-column flex-lg-row justify-content-end align-items-stretch align-items-lg-center w-100 mt-2 mt-lg-0">

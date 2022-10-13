@@ -1,13 +1,12 @@
 import formatThousands from 'format-thousands'
-import { MapPin, Like } from '../images/icons/'
+import { LikeBtn } from './'
+import { MapPin } from '../images/icons/'
 
 export default function Card({ product }) {
   return (
     <div className="card h-100">
       <div className="card-header position-relative">
-        <button className="btn btn-like">
-          <img src={Like} height="16" alt="Зберегти" />
-        </button>
+        <LikeBtn />
         <img src={product.img} alt="Product" />
         { product.tag && <span className="badge tag text-lowercase">{product.tag}</span> }
         { product.badge && <span className="badge text-uppercase">{product.badge}</span>}
